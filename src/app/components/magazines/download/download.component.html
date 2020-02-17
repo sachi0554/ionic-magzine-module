@@ -1,0 +1,14 @@
+<div >
+  <ion-item lines="full" >
+    <ion-thumbnail slot="start">
+      <img [src]="magazine.imageUrl"   />
+    </ion-thumbnail>
+    <ion-label>{{magazine.title}}
+      <p>{{magazine.publishDate | date}}</p>
+      
+    </ion-label>
+   
+   <ion-icon  slot="end"  name="trash"></ion-icon> 
+    
+  </ion-item>
+  </div>

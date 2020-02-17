@@ -1,0 +1,16 @@
+<div >
+<ion-item lines="full" >
+  <ion-thumbnail slot="start">
+    <img [src]="magazine.imageUrl"   />
+  </ion-thumbnail>
+  <ion-label>{{magazine.title}}
+    <p>{{magazine.publishDate | date}}</p>
+    <ion-progress-bar *ngIf="progress > 0" type="determinate" [value]="progress"></ion-progress-bar>
+  </ion-label>
+ 
+ <ion-icon (click)="increaseProgress()"  *ngIf="magazine.title ==='TIME'" slot="end"  name="add"></ion-icon> 
+  <ion-icon (click)="increaseProgress()"  *ngIf="magazine.title !=='TIME'" slot="end"  name="download"></ion-icon>
+  
+</ion-item>
+</div>
+

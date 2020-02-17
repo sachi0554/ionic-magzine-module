@@ -1,0 +1,22 @@
+.full_line{
+  
+   max-height: 75px;
+   padding: 1px;
+   border-bottom: 1px solid darken($color: #cccc, $amount: 0);
+}
+.icon-size{
+    font-size: 1.8em;
+    text-align: justify;
+    color: #cccc;
+}
+
+.item ion-thumbnail {
+    min-width: 3rem;    
+    min-height: 3rem;
+   
+    img {
+        max-width: 3rem;    
+        min-width: 3rem;
+        border-radius: 7px;
+    }
+}
