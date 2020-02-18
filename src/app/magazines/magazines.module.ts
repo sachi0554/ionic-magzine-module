@@ -7,9 +7,9 @@ import { IonicModule } from '@ionic/angular';
 import { MagazinesPageRoutingModule } from './magazines-routing.module';
 
 import { MagazinesPage } from './magazines.page';
-import { LatestComponent } from '../components/magazines/latest/latest.component';
-import { DownloadComponent } from '../components/magazines/download/download.component';
-import { SubscriptionComponent } from '../components/magazines/subscription/subscription.component';
+import { LatestComponent } from './components/latest/latest.component';
+import { DownloadComponent } from './components/download/download.component';
+import { SubscriptionComponent } from './components/subscription/subscription.component';
 
 @NgModule({
   imports: [

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {SegmentChangeEventDetail} from '@ionic/core';
-import { ServicesService } from './services.service';
-import { Magazine } from './magazines.model';
+import { MagazinesService } from '../../services/Magazines.service';
+import { Magazine } from '../../model/magazines.model';
 
 @Component({
   selector: 'app-magazines',
@@ -11,7 +11,7 @@ import { Magazine } from './magazines.model';
 export class MagazinesPage implements OnInit {
   magazine: Magazine [];
   selectSegment = 'latest';
-  constructor(private magazineService: ServicesService) { }
+  constructor(private magazineService: MagazinesService) { }
 
   ngOnInit() {
     this.magazine = this.magazineService.magazines;

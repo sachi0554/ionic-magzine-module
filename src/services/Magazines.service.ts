@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Magazine } from './magazines.model';
+import { Magazine } from '../model/magazines.model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ServicesService {
+export class MagazinesService {
   private _magazines: Magazine[] = [
       new Magazine(
       '1', 'TIME', 'new eduge technology', 'https://img.timeinc.net/time/magazine/archive/covers/2006/1101061023_400.jpg', Date()
